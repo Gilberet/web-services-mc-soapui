@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9bee0b6c-4690-4ab0-8f4e-787c15743da8" activeEnvironment="Default" name="Servidor de SAI" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ad606b0b-212e-4ee6-8279-90303462864c" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://tempuri.org/}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://172.17.0.40/multicenterws/Service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint></con:endpoints><con:operation id="afa2f712-f0b5-4078-821d-fb1b6bc25181" isOneWay="false" action="http://tempuri.org/estadoWebService" name="estadoWebService" bindingOperationName="estadoWebService" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="af3c5ba8-4960-4a34-9771-7adbac9317c2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:estadoWebService/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/estadoWebService"/></con:call></con:operation><con:operation id="583d8c39-6b37-4448-a642-887176e6491d" isOneWay="false" action="http://tempuri.org/obtener_oc_wms" name="obtener_oc_wms" bindingOperationName="obtener_oc_wms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c968d359-b8e5-46c7-8977-1c96ebd34265" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtener_oc_wms>\r
+         <tem:num_oc>?</tem:num_oc>\r
+      </tem:obtener_oc_wms>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtener_oc_wms"/></con:call></con:operation><con:operation id="f3f52418-1415-4f2b-9581-e21a57787d9a" isOneWay="false" action="http://tempuri.org/obtenerArticulo" name="obtenerArticulo" bindingOperationName="obtenerArticulo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="50e0cfaa-0499-4c21-a07c-38558d140e17" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerArticulo>\r
+         <tem:codArticulo>?</tem:codArticulo>\r
+      </tem:obtenerArticulo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerArticulo"/></con:call></con:operation><con:operation id="78c80fe8-b863-472c-979b-5496c5317751" isOneWay="false" action="http://tempuri.org/obtenerCliente" name="obtenerCliente" bindingOperationName="obtenerCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0f4cec3a-ca60-46b7-a49e-659f8a3f0770" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerCliente>\r
+         <tem:codAgenda>?</tem:codAgenda>\r
+      </tem:obtenerCliente>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerCliente"/></con:call></con:operation><con:operation id="388d2e15-7a99-416f-8b64-06491ca52f1f" isOneWay="false" action="http://tempuri.org/obtenerDetalleTransaccion" name="obtenerDetalleTransaccion" bindingOperationName="obtenerDetalleTransaccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="48e325e7-e955-4899-9ab0-8ed74903cd52" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerDetalleTransaccion>\r
+         <tem:nroTransaccion>?</tem:nroTransaccion>\r
+      </tem:obtenerDetalleTransaccion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerDetalleTransaccion"/></con:call></con:operation><con:operation id="c8e864be-9dff-4f2e-80e3-b523817e71f9" isOneWay="false" action="http://tempuri.org/obtenerEncabezadoTransaccion" name="obtenerEncabezadoTransaccion" bindingOperationName="obtenerEncabezadoTransaccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d9d896ac-4917-4904-908c-130213e3342b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerEncabezadoTransaccion>\r
+         <tem:nroTransaccion>?</tem:nroTransaccion>\r
+      </tem:obtenerEncabezadoTransaccion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerEncabezadoTransaccion"/></con:call></con:operation><con:operation id="e49ab5aa-ddbc-47d4-a3ae-bf50becf7227" isOneWay="false" action="http://tempuri.org/obtenerMontoTransaccion" name="obtenerMontoTransaccion" bindingOperationName="obtenerMontoTransaccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="59d6b772-c432-434b-abe6-f23afc909477" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerMontoTransaccion>\r
+         <tem:nroTransaccion>?</tem:nroTransaccion>\r
+         <!--Optional:-->\r
+         <tem:fechaIni>?</tem:fechaIni>\r
+         <!--Optional:-->\r
+         <tem:fechaFin>?</tem:fechaFin>\r
+      </tem:obtenerMontoTransaccion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerMontoTransaccion"/></con:call></con:operation><con:operation id="53d45510-7859-4767-af86-db4ecd2f0168" isOneWay="false" action="http://tempuri.org/obtenerNotasRemision" name="obtenerNotasRemision" bindingOperationName="obtenerNotasRemision" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="59c237ea-caed-4d0d-a767-5e209fe9a050" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerNotasRemision>\r
+         <!--Optional:-->\r
+         <tem:nrosTransacciones>?</tem:nrosTransacciones>\r
+      </tem:obtenerNotasRemision>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerNotasRemision"/></con:call></con:operation><con:operation id="e9209578-74ec-41eb-bc2b-ff85027d48e5" isOneWay="false" action="http://tempuri.org/obtenerStock" name="obtenerStock" bindingOperationName="obtenerStock" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f5fc66b3-8f86-497a-8f2b-7a2ce2769027" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerStock>\r
+         <tem:codArticulo>?</tem:codArticulo>\r
+      </tem:obtenerStock>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerStock"/></con:call></con:operation><con:operation id="c21f7ea1-9e79-442e-af26-304edaeb85fb" isOneWay="false" action="http://tempuri.org/obtenerStockAlmacen" name="obtenerStockAlmacen" bindingOperationName="obtenerStockAlmacen" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="63679088-d7b8-44d2-a12e-3cf953b1ee8a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:obtenerStockAlmacen>\r
+         <tem:codArticulo>?</tem:codArticulo>\r
+         <tem:codAlmacen>?</tem:codAlmacen>\r
+      </tem:obtenerStockAlmacen>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/obtenerStockAlmacen"/></con:call></con:operation><con:operation id="e5538571-129e-4f08-a1e9-1b92804cee0e" isOneWay="false" action="http://tempuri.org/presentacion" name="presentacion" bindingOperationName="presentacion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="51fc57d4-9176-48ba-a71c-69751c423ad7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:presentacion/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/presentacion"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="07bfdc7e-d8ec-4523-a7a6-3c3d41f59fc6" wsaVersion="NONE" name="ServiceSoap12" type="wsdl" bindingName="{http://tempuri.org/}ServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://172.17.0.40/multicenterws/Service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://172.17.0.40/multicenterws/Service.asmx?WSDL"><con:part><con:url>http://172.17.0.40/multicenterws/Service.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="estadoWebService">
+        <s:complexType/>
+      </s:element>
+      <s:element name="estadoWebServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="estadoWebServiceResult" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="presentacion">
+        <s:complexType/>
+      </s:element>
+      <s:element name="presentacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="presentacionResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerEncabezadoTransaccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nroTransaccion" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerEncabezadoTransaccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerEncabezadoTransaccionResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerDetalleTransaccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nroTransaccion" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerDetalleTransaccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerDetalleTransaccionResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codAgenda" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerClienteResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerStock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codArticulo" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerStockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerStockResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerStockAlmacen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codArticulo" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="codAlmacen" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerStockAlmacenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerStockAlmacenResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerArticulo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codArticulo" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerArticuloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerArticuloResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_oc_wms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num_oc" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_oc_wmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_oc_wmsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerNotasRemision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nrosTransacciones" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerNotasRemisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerNotasRemisionResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerMontoTransaccion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nroTransaccion" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaIni" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaFin" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerMontoTransaccionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerMontoTransaccionResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="estadoWebServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:estadoWebService"/>
+  </wsdl:message>
+  <wsdl:message name="estadoWebServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:estadoWebServiceResponse"/>
+  </wsdl:message>
+  <wsdl:message name="presentacionSoapIn">
+    <wsdl:part name="parameters" element="tns:presentacion"/>
+  </wsdl:message>
+  <wsdl:message name="presentacionSoapOut">
+    <wsdl:part name="parameters" element="tns:presentacionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerEncabezadoTransaccionSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerEncabezadoTransaccion"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerEncabezadoTransaccionSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerEncabezadoTransaccionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerDetalleTransaccionSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerDetalleTransaccion"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerDetalleTransaccionSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerDetalleTransaccionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerCliente"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerClienteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerStockSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerStock"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerStockSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerStockResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerStockAlmacenSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerStockAlmacen"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerStockAlmacenSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerStockAlmacenResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerArticuloSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerArticulo"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerArticuloSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerArticuloResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtener_oc_wmsSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_oc_wms"/>
+  </wsdl:message>
+  <wsdl:message name="obtener_oc_wmsSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_oc_wmsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerNotasRemisionSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerNotasRemision"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerNotasRemisionSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerNotasRemisionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerMontoTransaccionSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerMontoTransaccion"/>
+  </wsdl:message>
+  <wsdl:message name="obtenerMontoTransaccionSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerMontoTransaccionResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="estadoWebService">
+      <wsdl:input message="tns:estadoWebServiceSoapIn"/>
+      <wsdl:output message="tns:estadoWebServiceSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="presentacion">
+      <wsdl:input message="tns:presentacionSoapIn"/>
+      <wsdl:output message="tns:presentacionSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEncabezadoTransaccion">
+      <wsdl:input message="tns:obtenerEncabezadoTransaccionSoapIn"/>
+      <wsdl:output message="tns:obtenerEncabezadoTransaccionSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDetalleTransaccion">
+      <wsdl:input message="tns:obtenerDetalleTransaccionSoapIn"/>
+      <wsdl:output message="tns:obtenerDetalleTransaccionSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCliente">
+      <wsdl:input message="tns:obtenerClienteSoapIn"/>
+      <wsdl:output message="tns:obtenerClienteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerStock">
+      <wsdl:input message="tns:obtenerStockSoapIn"/>
+      <wsdl:output message="tns:obtenerStockSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerStockAlmacen">
+      <wsdl:input message="tns:obtenerStockAlmacenSoapIn"/>
+      <wsdl:output message="tns:obtenerStockAlmacenSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerArticulo">
+      <wsdl:input message="tns:obtenerArticuloSoapIn"/>
+      <wsdl:output message="tns:obtenerArticuloSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_oc_wms">
+      <wsdl:input message="tns:obtener_oc_wmsSoapIn"/>
+      <wsdl:output message="tns:obtener_oc_wmsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerNotasRemision">
+      <wsdl:input message="tns:obtenerNotasRemisionSoapIn"/>
+      <wsdl:output message="tns:obtenerNotasRemisionSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMontoTransaccion">
+      <wsdl:input message="tns:obtenerMontoTransaccionSoapIn"/>
+      <wsdl:output message="tns:obtenerMontoTransaccionSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="estadoWebService">
+      <soap:operation soapAction="http://tempuri.org/estadoWebService" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="presentacion">
+      <soap:operation soapAction="http://tempuri.org/presentacion" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEncabezadoTransaccion">
+      <soap:operation soapAction="http://tempuri.org/obtenerEncabezadoTransaccion" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDetalleTransaccion">
+      <soap:operation soapAction="http://tempuri.org/obtenerDetalleTransaccion" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCliente">
+      <soap:operation soapAction="http://tempuri.org/obtenerCliente" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerStock">
+      <soap:operation soapAction="http://tempuri.org/obtenerStock" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerStockAlmacen">
+      <soap:operation soapAction="http://tempuri.org/obtenerStockAlmacen" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerArticulo">
+      <soap:operation soapAction="http://tempuri.org/obtenerArticulo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_oc_wms">
+      <soap:operation soapAction="http://tempuri.org/obtener_oc_wms" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerNotasRemision">
+      <soap:operation soapAction="http://tempuri.org/obtenerNotasRemision" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMontoTransaccion">
+      <soap:operation soapAction="http://tempuri.org/obtenerMontoTransaccion" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="estadoWebService">
+      <soap12:operation soapAction="http://tempuri.org/estadoWebService" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="presentacion">
+      <soap12:operation soapAction="http://tempuri.org/presentacion" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEncabezadoTransaccion">
+      <soap12:operation soapAction="http://tempuri.org/obtenerEncabezadoTransaccion" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDetalleTransaccion">
+      <soap12:operation soapAction="http://tempuri.org/obtenerDetalleTransaccion" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCliente">
+      <soap12:operation soapAction="http://tempuri.org/obtenerCliente" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerStock">
+      <soap12:operation soapAction="http://tempuri.org/obtenerStock" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerStockAlmacen">
+      <soap12:operation soapAction="http://tempuri.org/obtenerStockAlmacen" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerArticulo">
+      <soap12:operation soapAction="http://tempuri.org/obtenerArticulo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_oc_wms">
+      <soap12:operation soapAction="http://tempuri.org/obtener_oc_wms" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerNotasRemision">
+      <soap12:operation soapAction="http://tempuri.org/obtenerNotasRemision" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMontoTransaccion">
+      <soap12:operation soapAction="http://tempuri.org/obtenerMontoTransaccion" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://172.17.0.40/multicenterws/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://172.17.0.40/multicenterws/Service.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint></con:endpoints><con:operation id="60978d5f-c199-44e9-a9a7-7c1d93a3e7d1" isOneWay="false" action="http://tempuri.org/estadoWebService" name="estadoWebService" bindingOperationName="estadoWebService" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="68eba51e-d602-46ee-bdb1-47d499e6954b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:estadoWebService/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/estadoWebServiceRequest"/></con:call></con:operation><con:operation id="7062462a-b393-421c-b6ca-dbab65145bf5" isOneWay="false" action="http://tempuri.org/obtener_oc_wms" name="obtener_oc_wms" bindingOperationName="obtener_oc_wms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d9449479-5b26-40e8-90bd-2ce06cf3db94" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtener_oc_wms>\r
+         <tem:num_oc>?</tem:num_oc>\r
+      </tem:obtener_oc_wms>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtener_oc_wmsRequest"/></con:call></con:operation><con:operation id="eaa23bec-c25e-474a-9bf5-c0d50b60f1b2" isOneWay="false" action="http://tempuri.org/obtenerArticulo" name="obtenerArticulo" bindingOperationName="obtenerArticulo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b69d3032-4521-4744-8f4a-9829d13f84c2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerArticulo>\r
+         <tem:codArticulo>?</tem:codArticulo>\r
+      </tem:obtenerArticulo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerArticuloRequest"/></con:call></con:operation><con:operation id="b34dac70-bc5e-4565-8312-319d12055d45" isOneWay="false" action="http://tempuri.org/obtenerCliente" name="obtenerCliente" bindingOperationName="obtenerCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d3257e9b-bb93-47d6-bbb3-6acd262cd200" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerCliente>\r
+         <tem:codAgenda>?</tem:codAgenda>\r
+      </tem:obtenerCliente>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerClienteRequest"/></con:call></con:operation><con:operation id="d7676a28-771b-47a6-b18c-6292025ae4c7" isOneWay="false" action="http://tempuri.org/obtenerDetalleTransaccion" name="obtenerDetalleTransaccion" bindingOperationName="obtenerDetalleTransaccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ae32a742-b036-4065-8c1a-73c6aaeeb491" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerDetalleTransaccion>\r
+         <tem:nroTransaccion>?</tem:nroTransaccion>\r
+      </tem:obtenerDetalleTransaccion>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerDetalleTransaccionRequest"/></con:call></con:operation><con:operation id="b8e938e2-dcb4-4782-9e58-b1e2968acd6f" isOneWay="false" action="http://tempuri.org/obtenerEncabezadoTransaccion" name="obtenerEncabezadoTransaccion" bindingOperationName="obtenerEncabezadoTransaccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="17ca7421-6ba0-495e-b40f-cfb41d81c4c0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerEncabezadoTransaccion>\r
+         <tem:nroTransaccion>?</tem:nroTransaccion>\r
+      </tem:obtenerEncabezadoTransaccion>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerEncabezadoTransaccionRequest"/></con:call></con:operation><con:operation id="ac11720b-45fd-49de-ab63-5d19c5d6c410" isOneWay="false" action="http://tempuri.org/obtenerMontoTransaccion" name="obtenerMontoTransaccion" bindingOperationName="obtenerMontoTransaccion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0d86df30-14bb-453f-be93-a65db9dd5836" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerMontoTransaccion>\r
+         <tem:nroTransaccion>?</tem:nroTransaccion>\r
+         <!--Optional:-->\r
+         <tem:fechaIni>?</tem:fechaIni>\r
+         <!--Optional:-->\r
+         <tem:fechaFin>?</tem:fechaFin>\r
+      </tem:obtenerMontoTransaccion>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerMontoTransaccionRequest"/></con:call></con:operation><con:operation id="e3681bc1-2d1f-4662-9a12-18adcde7e6ae" isOneWay="false" action="http://tempuri.org/obtenerNotasRemision" name="obtenerNotasRemision" bindingOperationName="obtenerNotasRemision" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="df384607-0c2b-4a12-8e46-788a42028e41" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerNotasRemision>\r
+         <!--Optional:-->\r
+         <tem:nrosTransacciones>?</tem:nrosTransacciones>\r
+      </tem:obtenerNotasRemision>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerNotasRemisionRequest"/></con:call></con:operation><con:operation id="ebbdc8d1-fc0e-44b0-aefc-3eda3135a29e" isOneWay="false" action="http://tempuri.org/obtenerStock" name="obtenerStock" bindingOperationName="obtenerStock" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a714144e-b6f2-460e-af59-ca3d6fd8be7e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerStock>\r
+         <tem:codArticulo>?</tem:codArticulo>\r
+      </tem:obtenerStock>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerStockRequest"/></con:call></con:operation><con:operation id="333f8ccc-fc99-4698-bccb-74c813deeeb2" isOneWay="false" action="http://tempuri.org/obtenerStockAlmacen" name="obtenerStockAlmacen" bindingOperationName="obtenerStockAlmacen" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="90c233e9-b2f4-4858-bdab-cf423506ab1b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:obtenerStockAlmacen>\r
+         <tem:codArticulo>?</tem:codArticulo>\r
+         <tem:codAlmacen>?</tem:codAlmacen>\r
+      </tem:obtenerStockAlmacen>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/obtenerStockAlmacenRequest"/></con:call></con:operation><con:operation id="be88ead1-0108-4811-92ca-fcab48beb118" isOneWay="false" action="http://tempuri.org/presentacion" name="presentacion" bindingOperationName="presentacion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a34e11de-7c06-41f0-8c1f-65099276f76a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.40/multicenterws/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:presentacion/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/presentacionRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
